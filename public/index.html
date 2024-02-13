@@ -5,44 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Personal Potfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-<div class="h-screen bg-gradient-to-b from-orange-300 to-white"> <!--div for entire top section-->
-  <div class="flex">
-    <img class="h-12 mr-96 ml-5" src="images/JJ-logo.png" alt="">
-    <ul class="flex text-black font-black font-sans mt-4 ml-56">
-      <a class="ml-56 hover:text-white h-7" href="#"><li>Home</li></a>
-      <a class="ml-24 hover:text-white h-7" href="#about"><li>About Me</li></a>
-      <a class="ml-24 hover:text-white h-7" href="#My-Projects"><li>My Projects</li></a>
-      <a class="ml-24 mr-5 hover:text-white h-7" href="#Contacts"><li>My Contacts</li></a>
+<!-- Top Section -->
+<div class="h-screen bg-gradient-to-b from-orange-300 to-white px-2 md:px-3 lg:px-4">
+  <!-- Header content -->
+  <div class="flex justify-between items-center">
+
+    <!-- Logo -->
+    <img class="h-12" src="images/JJ-logo.png" alt="Logo">
+
+    <!-- Navigation -->
+    <ul class="hidden md:flex text-black font-black font-sans mt-4">
+      <a class="ml-6 md:ml-16 hover:text-white" href="#"><li>Home</li></a>
+      <a class="ml-6 md:ml-16 hover:text-white" href="#about"><li>About Me</li></a>
+      <a class="ml-6 md:ml-16 hover:text-white" href="#My-Projects"><li>My Projects</li></a>
+      <a class="ml-6 md:ml-16 hover:text-white" href="#Contacts"><li>My Contacts</li></a>
     </ul>
   </div>
-  <!-- Header in header with my name -->
-<div class="flex"><!-- div for the entire header content -->
- <div><!-- div for text content only -->
-  <div class="ml-12 mt-60">
-    <h1 class="text-black font-black font-serif text-6xl ml-36">Hello, I'm Juma.</h1>
-    <h1 class="text-black font-black font-serif text-6xl"> I'm a Software Developer.</h1>
+
+  <!-- Header content -->
+  <div class="flex justify-between items-center mt-16">
+
+    <!-- Text content -->
+    <div class="w-full md:w-1/2">
+      <div class="ml-12">
+        <h1 class="text-black font-black text-center font-serif text-4xl md:text-4xl lg:text-6xl xl:text-6xl">Hello, I'm Juma.</h1>
+        <h1 class="text-black font-black text-center font-serif text-4xl  md:text-4xl lg:text-6xl xl:text-6xl"> I'm a Software Developer</h1>
+        <!-- line -->
+        <div class="bg-black h-1 w-72 rounded mt-3 ml-5 lg:ml-44 2xl:ml-52"></div>
+        <!-- Text in header about me -->
+        <p class="font-sans text-black mt-4 text-center">I'm a student currently studying at <a class="underline" href="https://www.isteducation.com/" target="_blank">Institute of Software Technologies</a> where I'm pursuing my diploma in Software Development.</p>
+        <!-- About myself -->
+        <div class="mt-8">
+          <p class="font-sans text-black font-semibold ml-10 lg:ml-60">Get to learn more about me</p>
+          <a href="#"><button class="bg-black text-white p-2 mt-3 rounded-xl font-sans font-semibold hover:bg-white hover:text-black hover:font-semibold hover:shadow-2xl ml-20 xl:ml-72">About Myself</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header image -->
+    <div class="hidden md:block">
+      <img class="h-60 md:px-24 lg:px-52" src="images/JJ-logo.png" alt="Header Image">
+    </div>
+
   </div>
-  <!-- line -->
-  <div class="bg-black h-1 w-72 rounded ml-72 mt-3"></div>
-  <!-- text in header about me -->
-  <p class="font-sans text-black ml-16 w-3/5 text-center font-semibold mt-4 text-xl">I'm a student currently studying at <a class="underline" href="https://www.isteducation.com/" target="_blank">Institute of Software Technologies</a> where i'm pursuing my diploma in Software Development.</p>
-  <!-- about myself -->
-  <div class="ml-28">
-    <p class="font-sans text-black w-2/5 text-center font-bold mt-4 ml-24">Get to learn more about me</p>
-    <a href="#"><button class="bg-black text-white p-2 mt-3 rounded-3xl font-sans font-semibold ml-64 text-sm hover:bg-white hover:text-black hover:font-semibold hover:shadow-2xl">About Myself</button></a>
-  </div>
- </div><!-- div for text content only -->
- <div class="mt-72"><!-- div for header image -->
-  <img src="images/JJ-logo.png" alt="JJ-logo">
- </div> <!-- div for header image -->
-</div><!-- div for the entire header content -->  
-</div> <!--div for entire top section-->
+</div>
+
 
 <!-- ABOUT SECTION -->
-<div id="about"> <!--About section div-->
+<div id="about" class="px-6 md:px-12 lg:px-20 xl:px-32"> <!--About section div-->
   <div class=""> <!--About section Header-->
     <h1 class="font-semibold text-3xl font-serif text-center mt-24">ABOUT MYSELF</h1>
   </div> <!--About section header-->
@@ -51,74 +64,135 @@
   </div>
   <h1 class="font-semibold text-3xl font-serif text-center mt-24">MY SKILLS</h1>
   <P class="text-center font-semibold mt-8">As a softare developer, I can Confidently say that I have mastered the following programming languages:</P>
-  <div class="flex justify-evenly mt-6 mb-24"> <!--Div for programming languages cards-->
-    <div class="p-2 bg-gradient-to-b rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl h-56"> <!--Div for HTML 5 card-->
-      <img class="w-40" src="images/html-5-logo.png" alt="html-5-logo">
-      <h2 class="text-center font-black">HTML 5</h2>
-    </div> <!--Div for HTML 5 card-->
-    <div class="p-2 bg-gradient-to-b rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl h-56"> <!--Div for CSS 3 card-->
-      <img class="w-40" src="images/css-3-logo.png" alt="html-5-logo">
-      <h2 class="text-center font-black">CSS 3</h2>
-    </div> <!--Div for CSS 3 card-->
-    <div class="p-2 bg-gradient-to-b rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl h-56"> <!--Div for JS card-->
-      <img class="w-40 rounded-xl" src="images/java-script-logo.png" alt="html-5-logo">
-      <h2 class="text-center font-black">JavaScript</h2>
-    </div> <!--Div for JS card-->
-    <div class="p-2 bg-gradient-to-b rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl h-56"> <!--Div for bootstrap card-->
-      <img class="w-40" src="images/bootstrap-logo.png" alt="html-5-logo">
-      <h2 class="text-center font-black mb-5">Bootstrap</h2>
-    </div> <!--Div for bootstrap card-->
-    <div class="p-2 bg-gradient-to-b rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl h-56"> <!--Div for tailindcss card-->
-      <img class="w-40" src="images/tailwindcss-logo.png" alt="html-5-logo">
-      <h2 class="text-center font-black">Tailwind CSS</h2>
-    </div> <!--Div for tailwindcss card-->
-    <div class="p-2 bg-gradient-to-b rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl h-56"> <!--Div for react card-->
-      <img class="w-40" src="images/react-logo.png" alt="html-5-logo">
-      <h2 class="text-center font-black">React</h2>
-    </div> <!--Div for react card-->
-  </div> <!--Div for programming languages cards-->
-</div> <!--About section div-->
+ <!-- Grid container for programming language cards -->
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
 
-<!-- My Projects -->
-<div id="My-Projects" class="mt-12"> <!--Div  for My Projects section-->
-    <h1 class="font-bold text-5xl font-serif text-center mt-8 mb-12">MY PROJECTS</h1>
-    <div class="flex justify-evenly"> <!--Div for all project cards-->
-    <a href="https://jumakrk.github.io/Pro-Plumb-Solutions-/#" target="_blank">
-      <div class="w-96 p-2 bg-gradient-to-b from-blue-300 to-blue-50 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"> <!--Div for  project card pro plumb-->
-        <img class="w-96 rounded-xl" src="images/pro-plumb-preview.png" alt="pro-plumb-preview">
-        <h2 class="font-black text-center">Pro-Plumb Solutions</h2>
-        <p class="text-center">This was my first ever complete website that shows my skills in HTML designing, CSS styling, web responsiveness and a bit of javascript for the mobile menu functionality.</p>
-      </div> <!--Div for  project card pro plumb-->
-    </a>
+  <!-- HTML 5 Card -->
+  <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <img class="w-40 mx-auto" src="images/html-5-logo.png" alt="HTML 5">
+    <h2 class="text-center font-semibold text-xl mt-4">HTML 5</h2>
+  </div>
 
-    <a href="https://github.com/jumakrk/Bakery.git" target="_blank">
-      <div class="w-96 p-2 bg-gradient-to-b from-gray-300 to-gray-50 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"> <!--Div for  project card Bakery-->
-        <img class="w-96 rounded-xl" src="images/bakery-preview.png" alt="bakery-preview">
-        <h2 class="font-black text-center">Bakery Website Concept</h2>
-        <p class="text-center">This website displays my skills in creating and styling cards using the Tailwindcss framework and although it's not responsive, It has the best looking footer according to me.</p>
-      </div> <!--Div for  project card Bakery-->
-    </a>
+  <!-- CSS 3 Card -->
+  <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <img class="w-40 mx-auto" src="images/css-3-logo.png" alt="CSS 3">
+    <h2 class="text-center font-semibold text-xl mt-4">CSS 3</h2>
+  </div>
 
-    <a href="https://jumakrk.github.io/Oraimo-Clone/#" target="_blank">
-      <div class="w-96 p-2 bg-gradient-to-b from-green-300 to-green-50 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"> <!--Div for  project card Oraimo-->
-        <img class="w-96 rounded-xl" src="images/oraimo-clone-preview.png" alt="oraimo-clone-preview">
-        <h2 class="font-black text-center">Oraimo Clone Website</h2>
-        <p class="text-center">This website displays my skills in styling a website using css for I was able to clone the entire  look of Oraimo's official website including its design, colors and fonts.</p>
-      </div> <!--Div for  project card Oraimo-->
-    </a>
-    </div><!--Div for all project cards-->
+  <!-- JavaScript Card -->
+  <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <img class="w-40 mx-auto" src="images/java-script-logo.png" alt="JavaScript">
+    <h2 class="text-center font-semibold text-xl mt-4">JavaScript</h2>
+  </div>
+
+  <!-- Bootstrap Card -->
+  <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <img class="w-40 mx-auto" src="images/bootstrap-logo.png" alt="Bootstrap">
+    <h2 class="text-center font-semibold text-xl mt-4">Bootstrap</h2>
+  </div>
+
+  <!-- Tailwind CSS Card -->
+  <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <img class="w-40 mx-auto" src="images/tailwindcss-logo.png" alt="Tailwind CSS">
+    <h2 class="text-center font-semibold text-xl mt-4">Tailwind CSS</h2>
+  </div>
+
+  <!-- React Card -->
+  <div class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <img class="w-40 mx-auto" src="images/react-logo.png" alt="React">
+    <h2 class="text-center font-semibold text-xl mt-4">React</h2>
+  </div>
+
+  <!-- Add more cards later on-->
+
+</div> <!-- Grid container for programming language cards -->
+
+<!-- Additional content to be added in the future-->
+
 </div>
 
+<!-- My Projects Section -->
+<div id="My-Projects" class="px-6 md:px-12 lg:px-20 xl:px-32">
+  <h1 class="font-bold text-3xl font-serif text-center mt-14 mb-12">MY PROJECTS</h1>
+  
+  <!-- Grid container for cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  
+    <!-- Project 1 Card -->
+    <a href="https://jumakrk.github.io/Pro-Plumb-Solutions-/#" target="_blank">
+      <div class="w-full p-2 bg-gradient-to-b from-blue-300 to-blue-50 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"> 
+        <img class="w-full rounded-xl" src="images/pro-plumb-preview.png" alt="pro-plumb-preview">
+        <h2 class="font-black text-center">Pro-Plumb Solutions</h2>
+        <p class="text-center">This was my first ever complete website that shows my skills in HTML designing, CSS styling, web responsiveness and a bit of javascript for the mobile menu functionality.</p>
+      </div> 
+    </a>
+    
+    <!-- Project 2 Card -->
+    <a href="https://github.com/jumakrk/Bakery.git" target="_blank">
+      <div class="w-full p-2 bg-gradient-to-b from-gray-300 to-gray-50 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"> 
+        <img class="w-full rounded-xl" src="images/bakery-preview.png" alt="bakery-preview">
+        <h2 class="font-black text-center">Bakery Website Concept</h2>
+        <p class="text-center">This website displays my skills in creating and styling cards using the Tailwindcss framework and although it's not responsive, It has the best looking footer according to me.</p>
+      </div> 
+    </a>
+    
+    <!-- Project 3 Card -->
+    <a href="https://jumakrk.github.io/Oraimo-Clone/#" target="_blank">
+      <div class="w-full p-2 bg-gradient-to-b from-green-300 to-green-50 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl"> 
+        <img class="w-full rounded-xl" src="images/oraimo-clone-preview.png" alt="oraimo-clone-preview">
+        <h2 class="font-black text-center">Oraimo Clone Website</h2>
+        <p class="text-center">This website displays my skills in styling a website using css for I was able to clone the entire  look of Oraimo's official website including its design, colors and fonts.</p>
+      </div> 
+    </a>
+    
+    <!-- Add more project cards as needed -->
+    
+  </div> <!-- Grid container for cards -->
+</div>
+
+<!-- Testimonial -->
+<div class="container mx-auto px-4 py-8 shadow-inner">
+  <h2 class=" font-bold text-3xl mb-8 text-center">My Testimonial</h2>
+  <div class="border border-gray-200 rounded-lg p-6">
+      <div class="flex items-center mb-4">
+          <img class="h-16 rounded-full mr-4" src="images/JJ-logo.png" alt="User Avatar">
+          <div>
+              <h3 class="text-lg font-semibold">Juma Kariuki</h3>
+              <p class="text-gray-600">Student</p>
+          </div>
+      </div>
+      <p class="text-gray-800">"Studying software development at the Institute of Software Technologies has been an incredible journey for me. The comprehensive curriculum, hands-on projects, and dedicated instructors have equipped me with the skills and confidence to pursue my passion for technology. I've learned valuable coding techniques, problem-solving skills, and teamwork, which have prepared me for a successful career in the tech industry. I am grateful for the opportunities and support I've received and highly recommend this program to anyone looking to kickstart their career in software development."</p>
+  </div>
+</div>
+
+
 <!-- Contacts Section -->
-<div id="Contacts" class="bg-orange-200"> <!--Div for the contacts section-->
-  <h1 class="text-3xl font-serif font-semibold text-center pt-10">My Contacts</h1>
-  <div class="flex justify-between pt-10 pb-10 pl-60 h-full"> <!--div for the contact icons-->
-    <a href="https://github.com/jumakrk" target="_blank"><img class="ml-2" src="./images/github PP.png" alt="">Github</a>
-    <a href="https://www.linkedin.com/in/juma-kariuki-38a9442a2/" target="_blank"><img class="ml-4" src="./images/linkedin PP.png" alt="">Linked In</a>
-    <a href="https://t.me/faze_jj" target="_blank"><img class="ml-4" src="./images/telegram PP.png" alt="">Telegram</a>
-    <a href="https://twitter.com/jumakrk" target="_blank"><img class="ml-2" src="./images/twitter PP.png" alt="">Twitter</a>
-    <a class="pr-60" href="#"><img class="ml-4" src="./images/instagram PP.png" alt="">Instagram</a>
+<div id="Contacts" class="bg-orange-200 py-10 px-6 md:px-12 lg:px-20 xl:px-32"> <!--Div for the contacts section-->
+  <h1 class="text-3xl font-serif font-semibold text-center">My Contacts</h1>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center mt-8"> <!--div for the contact icons-->
+    <!-- Github -->
+    <a href="https://github.com/jumakrk" target="_blank" class="flex flex-col items-center">
+      <img class="w-6 h-6 md:w-auto md:h-auto" src="./images/github PP.png" alt="">
+      <span class="mt-2">Github</span>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/juma-kariuki-38a9442a2/" target="_blank" class="flex flex-col items-center">
+      <img class="w-6 h-6 md:w-auto md:h-auto" src="./images/linkedin PP.png" alt="">
+      <span class="mt-2">Linked In</span>
+    </a>
+    <!-- Telegram -->
+    <a href="https://t.me/faze_jj" target="_blank" class="flex flex-col items-center">
+      <img class="w-6 h-6 md:w-auto md:h-auto" src="./images/telegram PP.png" alt="">
+      <span class="mt-2">Telegram</span>
+    </a>
+    <!-- Twitter -->
+    <a href="https://twitter.com/jumakrk" target="_blank" class="flex flex-col items-center">
+      <img class="w-6 h-6 md:w-auto md:h-auto" src="./images/twitter PP.png" alt="">
+      <span class="mt-2">Twitter</span>
+    </a>
   </div> <!--div for the contact icons-->
 </div> <!--Div for contacts section-->
+
+
 </body>
 </html>
