@@ -1,0 +1,11 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-links {
+  display: none; /* Initially hide the navigation links */
+}
+
+.nav-links.show {
+  display: block; /* Display the navigation links when the 'show' class is present */
+}

@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
   <title>Personal Potfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-blue-400">
 <!-- Top Section -->
-<div class="h-screen bg-gradient-to-b from-orange-300 to-white px-2 md:px-3 lg:px-4">
+<div class="h-screen px-2 md:px-3 lg:px-4">
   <!-- Header content -->
   <div class="flex justify-between items-center">
 
@@ -23,6 +24,8 @@
       <a class="ml-6 md:ml-16 hover:text-white" href="#My-Projects"><li>My Projects</li></a>
       <a class="ml-6 md:ml-16 hover:text-white" href="#Contacts"><li>My Contacts</li></a>
     </ul>
+
+    <img src="images/mobile-menu.png" alt="mobile-menu" class="md:hidden">
   </div>
 
   <!-- Header content -->
@@ -39,8 +42,8 @@
         <p class="font-sans text-black mt-4 text-center mr-5">I'm a student currently studying at <a class="underline" href="https://www.isteducation.com/" target="_blank">Institute of Software Technologies</a> where I'm pursuing my diploma in Software Development.</p>
         <!-- About myself -->
         <div class="mt-8">
-          <p class="font-sans text-black font-semibold ml-10 lg:ml-60">Get to learn more about me</p>
-          <a href="#"><button class="bg-black text-white p-2 mt-3 rounded-xl font-sans font-semibold hover:bg-white hover:text-black hover:font-semibold hover:shadow-2xl ml-20 xl:ml-72">About Myself</button></a>
+          <p class="font-sans text-black font-semibold ml-20 lg:ml-64">Download My CV</p>
+          <a href="#"><button class="bg-black text-white p-2 mt-3 rounded-xl font-sans font-semibold hover:bg-white hover:text-black hover:font-semibold hover:shadow-2xl ml-28 xl:ml-72">Get CV</button></a>
         </div>
       </div>
     </div>
@@ -112,11 +115,11 @@
 </div>
 
 <!-- My Projects Section -->
-<div id="My-Projects" class="mb-52 px-6 md:px-12 lg:px-20 xl:px-32">
-  <h1 class="font-bold text-3xl font-serif text-center mt-14 mb-40">MY PROJECTS</h1>
+<div id="My-Projects" class="mb-52 scroll-px-6 md:px-12 lg:px-20 xl:px-32">
+  <h1 class="font-bold text-3xl font-serif text-center mt-52 mb-32">MY PROJECTS</h1>
   
   <!-- Grid container for cards -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  border border-white px-4 py-4 rounded-3xl">
   
     <!-- Project 1 Card -->
     <a href="https://jumakrk.github.io/Pro-Plumb-Solutions-/#" target="_blank">
@@ -151,9 +154,9 @@
 </div>
 
 <!-- Testimonial -->
-<div class="container mx-auto px-4 py-8 shadow-inner">
-  <h2 class=" font-bold text-3xl mb-8 text-center">My Testimonial</h2>
-  <div class="border border-gray-200 rounded-lg p-6">
+<div class="mx-auto px-4 shadow-inner">
+  <h2 class=" font-bold text-3xl mb-8 text-center">Testimonial</h2>
+  <div class="border border-white rounded-3xl p-6">
       <div class="flex items-center mb-4">
           <img class="h-16 rounded-full mr-4" src="images/JJ-logo.png" alt="User Avatar">
           <div>
@@ -194,6 +197,12 @@
   </div> <!--div for the contact icons-->
 </div> <!--Div for contacts section-->
 
+<!-- Footer Section -->
+<div>
+  <footer class=" h-52">
+    <img src="images/JJ-logo.png" alt="">
+  </footer>
+</div>
 
 </body>
 </html>
