@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="index.css">
   <title>Personal Potfolio</title>
+  <link rel="stylesheet" href="main.css"> <!--My own custom css-->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <!--Tailindcss Play CDN-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS animation -->
 </head>
@@ -171,7 +172,7 @@
   <!-- Moses Owoko Testimonial -->
   <div data-aos="zoom-in" class="border border-white rounded-3xl p-6 w-full sm:w-auto sm:max-w-xs mb-8 mx-4">
     <div class="flex items-center mb-4">
-        <img class="h-16 rounded-full mr-4" src="images/Moses-avatar.png" alt="User Avatar">
+        <img class="h-16 rounded-full mr-4" src="images/Moses.jpg" alt="User Avatar">
         <div>
             <h3 class="text-lg font-semibold">Moses Owoko</h3>
             <p class="text-gray-600">Friend and Classmate</p>
@@ -183,7 +184,7 @@
   <!-- IST Testimonial -->
   <div data-aos="zoom-in" class="border border-white rounded-3xl p-6 w-full sm:w-auto sm:max-w-xs mb-8 mx-4">
     <div class="flex items-center mb-4">
-        <img class="h-16 rounded-full mr-4" src="images/IST-logo.png" alt="School Logo">
+        <img class="h-16 rounded-full mr-4 bg-white" src="images/ist logo.png" alt="School Logo">
         <div>
             <h3 class="text-lg font-semibold">Institute of Software Technologies</h3>
             <p class="text-gray-600">Educational Institution</p>
@@ -196,39 +197,44 @@
 
 
 <!-- Footer Section -->
-<div class="h-60 mt-12 flex items-center">
-  <img class="h-40" src="images/JJ-logo.png" alt="">
-  <div class="ml-96 -mt-8">
+<div class="mt-12 flex flex-col md:flex-row lg:justify-evenly items-center">
+  <img class="h-40 lg:-ml-40 lg:-mr-40 md:mr-24 md:ml-12 hidden md:block" src="images/JJ-logo.png" alt="">
+  <!-- Quick Links -->
+  <div class="ml-4 -mt-8 md:mt-0 hidden lg:block">
     <p class="text-black font-black text-center mb-2">Quick links</p>
-    <ul class="text-black text-start ml-5">
-      <a class="hover:text-white" href="#"><li class="mb-2">Home</li></a>
-      <a class="hover:text-white" href="#about"><li class="mb-2">About me</li></a>
-      <a class="hover:text-white" href="#My-Projects"><li class="mb-2">My Projects</li></a>
-      <a class="hover:text-white" href="#Contacts"><li class="mb-2">My Contact</li></a>
+    <ul class="text-black text-start ml-5 md:ml-0">
+      <a class="hover:text-white" href="#"><li class="mb-2 md:mb-0">Home</li></a>
+      <a class="hover:text-white" href="#about"><li class="mb-2 md:mb-0">About me</li></a>
+      <a class="hover:text-white" href="#My-Projects"><li class="mb-2 md:mb-0">My Projects</li></a>
+      <a class="hover:text-white" href="#Contacts"><li class="mb-2 md:mb-0">My Contact</li></a>
     </ul>
   </div>
-  <div class="ml-52">
-    <p class="text-black font-black text-center mb-2">Follow my socials</p>
-    <ul class="text-black text-start ml-1">
-      <a class="flex hover:text-white" href="https://github.com/jumakrk" target="_blank"><img class="h-5 pt-1 pr-1" src="images/github PP.png" alt="github"><li class="mb-2">Github</li></a>
-      <a class="flex hover:text-white" href="https://twitter.com/jumakrk" target="_blank"><img class="h-5 pt-1 pr-1" src="images/twitter PP.png" alt="twitter"><li class="mb-2">Twitter</li></a>
-      <a class="flex hover:text-white" href="https://www.instagram.com/faze._.j/" target="_blank"><img class="h-5 pt-1 pr-1" src="images/instagram PP.png" alt="instagram"><li class="mb-2">Instagram</li></a>
-      <a class="flex hover:text-white" href="https://www.linkedin.com/in/juma-kariuki-38a9442a2/" target="_blank"><img class="h-5 pt-1 pr-1" src="images/linkedin PP.png" alt="linkedin"><li class="mb-2">Linked In</li></a>
-      <a class="flex hover:text-white" href="https://t.me/faze_jj" target="_blank"><img class="h-5 pt-1 pr-1" src="images/telegram PP.png" alt="telegram"><li class="mb-2">Telegram</li></a>
+  <!-- My Socials -->
+  <div class="lg:ml-4 mb-4 md:mb-0">
+    <p class="text-black font-black text-center mb-2 md:mb-0">Follow my socials</p>
+    <ul class="text-black text-start ml-1 md:ml-0">
+      <a class="flex hover:text-white" href="https://github.com/jumakrk" target="_blank"><img class="h-5 pt-1 pr-1" src="images/github PP.png" alt="github"><li class="mb-2 md:mb-0">Github</li></a>
+      <a class="flex hover:text-white" href="https://twitter.com/jumakrk" target="_blank"><img class="h-5 pt-1 pr-1" src="images/twitter PP.png" alt="twitter"><li class="mb-2 md:mb-0">Twitter</li></a>
+      <a class="flex hover:text-white" href="https://www.instagram.com/faze._.j/" target="_blank"><img class="h-5 pt-1 pr-1" src="images/instagram PP.png" alt="instagram"><li class="mb-2 md:mb-0">Instagram</li></a>
+      <a class="flex hover:text-white" href="https://www.linkedin.com/in/juma-kariuki-38a9442a2/" target="_blank"><img class="h-5 pt-1 pr-1" src="images/linkedin PP.png" alt="linkedin"><li class="mb-2 md:mb-0">Linked In</li></a>
+      <a class="flex hover:text-white" href="https://t.me/faze_jj" target="_blank"><img class="h-5 pt-1 pr-1" src="images/telegram PP.png" alt="telegram"><li class="mb-2 md:mb-0">Telegram</li></a>
     </ul>
   </div>
-  <div class="ml-52 mb-12">
-    <p class="text-black font-black text-center mb-2">Contact me</p>
-    <ul class="text-black text-start ml-5">
-      <a class="flex hover:text-white" href="tel:+254743581831"><img class="h-5 pt-1 pr-1" src="images/telephone.png" alt="telephone"><li class="mb-2">+254 743 581 831</li></a>
-      <a class="flex hover:text-white" href="tel:+254101271939"><img class="h-5 pt-1 pr-1" src="images/telephone.png" alt="telephone"><li class="mb-2">+254 101 271 939</li></a>
-      <a class="flex hover:text-white" href="#"><img class="h-5 pt-1 pr-1" src="images/email.png" alt="email"><li class="mb-2">jumakrk@gmail.com</li></a>
+  <!-- Contacts -->
+  <div class="lg:ml-4 md:ml-24 md:-mt-10 lg:mb-10">
+    <p class="text-black font-black text-center mb-2 md:mb-0">Contact me</p>
+    <ul class="text-black text-start ml-5 md:ml-0">
+      <a class="flex hover:text-white" href="tel:+254743581831"><img class="h-5 pt-1 pr-1" src="images/telephone.png" alt="telephone"><li class="mb-2 md:mb-0">+254 743 581 831</li></a>
+      <a class="flex hover:text-white" href="tel:+254101271939"><img class="h-5 pt-1 pr-1" src="images/telephone.png" alt="telephone"><li class="mb-2 md:mb-0">+254 101 271 939</li></a>
+      <a class="flex hover:text-white" href="#"><img class="h-5 pt-1 pr-1" src="images/email.png" alt="email"><li class="mb-2 md:mb-0">jumakrk@gmail.com</li></a>
     </ul>
   </div>
 </div>
-<div class="bg-black mt-px h-24 pt-8">
-  <p class="text-white text-center">©Copyright 2023. Bakery All Rights Reserved</p>
+<div class="mt-px h-24 pt-8">
+  <p class="text-black text-center">© Copyright 2023. Juma Kariuki All Rights Reserved</p>
 </div>
+
+
 
 <script src="main.js"></script> <!--Javascript  file linked to the HTML page-->
 
