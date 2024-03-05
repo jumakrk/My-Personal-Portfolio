@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="index.css">
   <title>Personal Potfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <!--Tailindcss Play CDN-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS animation -->
 </head>
 <body class="bg-blue-400">
@@ -25,8 +25,6 @@
       <a class="ml-6 md:ml-16 hover:text-white" href="#My-Projects"><li>My Projects</li></a>
       <a class="ml-6 md:ml-16 hover:text-white" href="#Contacts"><li>My Contacts</li></a>
     </ul>
-
-    <img src="images/mobile-menu.png" alt="mobile-menu" class="md:hidden">
   </div>
 
   <!-- Header content -->
@@ -44,7 +42,7 @@
         <!-- About myself -->
         <div class="mt-8">
           <p data-aos="fade-up" data-aos-duration="1500" class="font-sans text-black font-semibold ml-20 lg:ml-64">Download My CV</p>
-          <a href="#"><button data-aos="fade-up" data-aos-duration="1800" class="bg-black text-white p-2 mt-3 rounded-xl font-sans font-semibold hover:bg-white hover:text-black hover:font-semibold hover:shadow-2xl ml-28 xl:ml-72">Get CV</button></a>
+          <a href="https://drive.google.com/file/d/1hMBbqGg-1dobetsClf-2PD2Gtn66sPTY/view?usp=drive_link" target="_blank"><button data-aos="fade-up" data-aos-duration="1800" class="bg-black text-white p-2 mt-3 rounded-xl font-sans font-semibold hover:bg-white hover:text-black hover:font-semibold hover:shadow-2xl ml-28 xl:ml-72">Get CV</button></a>
         </div>
       </div>
     </div>
@@ -61,7 +59,7 @@
 <!-- ABOUT SECTION -->
 <div id="about" class="px-6 md:px-12 lg:px-20 xl:px-32"> <!--About section div-->
   <div class=""> <!--About section Header-->
-    <h1 class="font-semibold text-3xl font-serif text-center mt-24">ABOUT MYSELF</h1>
+    <h1 data-aos="fade-up" data-aos-duration="500" class="font-semibold text-3xl font-serif text-center mt-24">ABOUT MYSELF</h1>
   </div> <!--About section header-->
   <div> <!--Text in About Page-->
     <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text-center mt-4">I'm JJ, but you probably already know that my full name is Juma Kariuki. I'm an 19-year-old guy who's absolutely crazy about cars. From the rumble of powerful engines to the sleek designs, everything about the automotive world just gets my heart racing. But that's not all - I'm also a huge tech geek. Seriously, I'm into anything and everything related to technology. The latest gadgets, breakthroughs, you name it—I love delving into the world of bits and bytes to see what's new and exciting. Oh, and gaming? It's not just a hobby for me; it's a way of life. Whether I'm diving into epic virtual battles or teaming up with friends online, gaming is my go-to for fun, relaxation, and a bit of friendly competition. Being 18 is a wild ride, and I'm standing at the crossroads of adulthood with a whole world of possibilities ahead. My love for cars, tech, and gaming isn't just a phase—it's the fuel that keeps me going. I'm ready to take on whatever the future holds, exploring new horizons and contributing my passion to the ever-changing landscape of the things I love. The road ahead is full of exciting adventures, and I'm revved up and ready to go!</p>
@@ -117,7 +115,8 @@
 
 <!-- My Projects Section -->
 <div id="My-Projects" class="mb-52 scroll-px-6 md:px-12 lg:px-20 xl:px-32">
-  <h1 class="font-bold text-3xl font-serif text-center mt-52 mb-32">MY PROJECTS</h1>
+  <h1 class="font-bold text-3xl font-serif text-center mt-52">MY PROJECTS</h1>
+  <p class="text-center font-semibold mt-8 mb-32">Below are some of my projects showcasing my skills</p>
   
   <!-- Grid container for cards -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  border border-white px-4 py-4 rounded-3xl">
@@ -155,9 +154,10 @@
 </div>
 
 <!-- Testimonial -->
-<div class="mx-auto px-4 shadow-inner mb-96">
-  <h2 class=" font-bold text-3xl mb-52 text-center">Testimonial</h2>
-  <div data-aos="zoom-in" class="border border-white rounded-3xl p-6">
+<h2 class="font-bold text-3xl mb-8 text-center">Testimonial</h2>
+<div class="mx-auto px-4 mb-8 flex flex-wrap justify-center">
+  <!-- Juma's Testimonial -->
+  <div data-aos="zoom-in" class="border border-white rounded-3xl p-6 w-full sm:w-auto sm:max-w-xs mb-8 mx-4">
       <div class="flex items-center mb-4">
           <img class="h-16 rounded-full mr-4" src="images/JJ-logo.png" alt="User Avatar">
           <div>
@@ -167,44 +167,72 @@
       </div>
       <p class="text-gray-800">"Studying software development at the Institute of Software Technologies has been an incredible journey for me. The comprehensive curriculum, hands-on projects, and dedicated instructors have equipped me with the skills and confidence to pursue my passion for technology. I've learned valuable coding techniques, problem-solving skills, and teamwork, which have prepared me for a successful career in the tech industry. I am grateful for the opportunities and support I've received and highly recommend this program to anyone looking to kickstart their career in software development."</p>
   </div>
+
+  <!-- Moses Owoko Testimonial -->
+  <div data-aos="zoom-in" class="border border-white rounded-3xl p-6 w-full sm:w-auto sm:max-w-xs mb-8 mx-4">
+    <div class="flex items-center mb-4">
+        <img class="h-16 rounded-full mr-4" src="images/Moses-avatar.png" alt="User Avatar">
+        <div>
+            <h3 class="text-lg font-semibold">Moses Owoko</h3>
+            <p class="text-gray-600">Friend and Classmate</p>
+        </div>
+    </div>
+    <p class="text-gray-800">"Studying software development at the Institute of Software Technologies alongside my friend Juma Kariuki has been an incredible journey for me. The comprehensive curriculum, hands-on projects, and dedicated instructors have equipped me with the skills and confidence to pursue my passion for technology. I've learned valuable coding techniques, problem-solving skills, and teamwork, which have prepared me for a successful career in the tech industry. I am grateful for the opportunities and support I've received and highly recommend this program to anyone looking to kickstart their career in software development."</p>
+  </div>
+
+  <!-- IST Testimonial -->
+  <div data-aos="zoom-in" class="border border-white rounded-3xl p-6 w-full sm:w-auto sm:max-w-xs mb-8 mx-4">
+    <div class="flex items-center mb-4">
+        <img class="h-16 rounded-full mr-4" src="images/IST-logo.png" alt="School Logo">
+        <div>
+            <h3 class="text-lg font-semibold">Institute of Software Technologies</h3>
+            <p class="text-gray-600">Educational Institution</p>
+        </div>
+    </div>
+    <p class="text-gray-800">"At the Institute of Software Technologies, we're dedicated to providing a transformative learning experience for our students. Our comprehensive curriculum is designed to equip students with the skills and knowledge needed to excel in the rapidly evolving field of software development. Through hands-on projects, industry-relevant coursework, and personalized mentorship, we strive to empower our students to become innovative problem solvers and effective collaborators. Join us at the Institute of Software Technologies and embark on a rewarding journey towards a successful career in technology."</p>
+  </div>
 </div>
 
 
-<!-- Contacts Section -->
-<div id="Contacts" class="py-10 px-6 md:px-12 lg:px-20 xl:px-32"> <!--Div for the contacts section-->
-  <h1 class="text-3xl font-serif font-semibold text-center">My Contacts</h1>
-  <p class="text-center">Get in touch with me:</p>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center mt-8"> <!--div for the contact icons-->
-    <!-- Github -->
-    <a href="https://github.com/jumakrk" target="_blank" class="flex flex-col items-center transform transition-all hover:-translate-y-2 duration-300">
-      <img class="w-6 h-6 md:w-auto md:h-auto" src="./images/github PP.png" alt="">
-      <p class="mt-2">Github</p>
-    </a>
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/juma-kariuki-38a9442a2/" target="_blank" class="flex flex-col items-center transform transition-all hover:-translate-y-2 duration-300">
-      <img class="w-6 h-6 md:w-auto md:h-auto" src="./images/linkedin PP.png" alt="">
-      <p class="mt-2">Linked In</p>
-    </a>
-    <!-- Telegram -->
-    <a href="https://t.me/faze_jj" target="_blank" class="flex flex-col items-center transform transition-all hover:-translate-y-2 duration-300">
-      <img class="w-6 h-6 md:w-auto md:h-auto" src="./images/telegram PP.png" alt="">
-      <p class="mt-2">Telegram</p>
-    </a>
-    <!-- Twitter -->
-    <a href="https://twitter.com/jumakrk" target="_blank" class="flex flex-col items-center transform transition-all hover:-translate-y-2 duration-300">
-      <img class="w-6 h-6 md:w-auto md:h-auto" src="./images/twitter PP.png" alt="">
-      <p class="mt-2">Twitter</p>
-    </a>
-  </div> <!--div for the contact icons-->
-</div> <!--Div for contacts section-->
 
 <!-- Footer Section -->
-<div>
-  <footer class=" h-52">
-    <img src="images/JJ-logo.png" alt="">
-  </footer>
+<div class="h-60 mt-12 flex items-center">
+  <img class="h-40" src="images/JJ-logo.png" alt="">
+  <div class="ml-96 -mt-8">
+    <p class="text-black font-black text-center mb-2">Quick links</p>
+    <ul class="text-black text-start ml-5">
+      <a class="hover:text-white" href="#"><li class="mb-2">Home</li></a>
+      <a class="hover:text-white" href="#about"><li class="mb-2">About me</li></a>
+      <a class="hover:text-white" href="#My-Projects"><li class="mb-2">My Projects</li></a>
+      <a class="hover:text-white" href="#Contacts"><li class="mb-2">My Contact</li></a>
+    </ul>
+  </div>
+  <div class="ml-52">
+    <p class="text-black font-black text-center mb-2">Follow my socials</p>
+    <ul class="text-black text-start ml-1">
+      <a class="flex hover:text-white" href="https://github.com/jumakrk" target="_blank"><img class="h-5 pt-1 pr-1" src="images/github PP.png" alt="github"><li class="mb-2">Github</li></a>
+      <a class="flex hover:text-white" href="https://twitter.com/jumakrk" target="_blank"><img class="h-5 pt-1 pr-1" src="images/twitter PP.png" alt="twitter"><li class="mb-2">Twitter</li></a>
+      <a class="flex hover:text-white" href="https://www.instagram.com/faze._.j/" target="_blank"><img class="h-5 pt-1 pr-1" src="images/instagram PP.png" alt="instagram"><li class="mb-2">Instagram</li></a>
+      <a class="flex hover:text-white" href="https://www.linkedin.com/in/juma-kariuki-38a9442a2/" target="_blank"><img class="h-5 pt-1 pr-1" src="images/linkedin PP.png" alt="linkedin"><li class="mb-2">Linked In</li></a>
+      <a class="flex hover:text-white" href="https://t.me/faze_jj" target="_blank"><img class="h-5 pt-1 pr-1" src="images/telegram PP.png" alt="telegram"><li class="mb-2">Telegram</li></a>
+    </ul>
+  </div>
+  <div class="ml-52 mb-12">
+    <p class="text-black font-black text-center mb-2">Contact me</p>
+    <ul class="text-black text-start ml-5">
+      <a class="flex hover:text-white" href="tel:+254743581831"><img class="h-5 pt-1 pr-1" src="images/telephone.png" alt="telephone"><li class="mb-2">+254 743 581 831</li></a>
+      <a class="flex hover:text-white" href="tel:+254101271939"><img class="h-5 pt-1 pr-1" src="images/telephone.png" alt="telephone"><li class="mb-2">+254 101 271 939</li></a>
+      <a class="flex hover:text-white" href="#"><img class="h-5 pt-1 pr-1" src="images/email.png" alt="email"><li class="mb-2">jumakrk@gmail.com</li></a>
+    </ul>
+  </div>
+</div>
+<div class="bg-black mt-px h-24 pt-8">
+  <p class="text-white text-center">©Copyright 2023. Bakery All Rights Reserved</p>
 </div>
 
+<script src="main.js"></script> <!--Javascript  file linked to the HTML page-->
+
+<!-- Script to initialize AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
