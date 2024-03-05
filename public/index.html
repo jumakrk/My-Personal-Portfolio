@@ -26,6 +26,21 @@
       <a class="ml-6 md:ml-16 hover:text-white" href="#My-Projects"><li>My Projects</li></a>
       <a class="ml-6 md:ml-16 hover:text-white" href="#Contacts"><li>My Contacts</li></a>
     </ul>
+
+        <!-- Mobile menu button -->
+    <button id="mobile-menu-toggle" class="mobile-menu md:hidden text-white focus:outline-none">
+      <img src="images/mobile-menu.png" class="h-6 w-6"/>
+    </button>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu md:hidden hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 justify-center items-center">
+      <ul class="text-white text-center">
+        <a href="#" class="block p-4 hover:bg-gray-800">Home</a>
+        <a href="#about" class="block p-4 hover:bg-gray-800">About Me</a>
+        <a href="#My-Projects" class="block p-4 hover:bg-gray-800">My Projects</a>
+        <a href="#Contacts" class="block p-4 hover:bg-gray-800">My Contacts</a>
+      </ul>
+    </div>
   </div>
 
   <!-- Header content -->
